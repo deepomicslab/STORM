@@ -226,7 +226,6 @@ def swap_solution(csr_st_exp, csr_sc_exp, picked_index, sc_meta, key, picked_tim
                 else:
                     #print(f'insert {cell_i} back to {tmp_cell_id}')
                     tmp_cell_id.insert(0,cell_i)
-                    picked_time.loc[cell_i] += 1
                 spot_cell_id = tmp_cell_id
         # print(spot,max_cor_rep)
         tmp = pd.DataFrame(np.array([[spot, time.time()-last, max_cor_rep]]))   
